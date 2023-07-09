@@ -43,6 +43,15 @@ class MultiplyOfArrayElements2Test {
 
         // Arrays.deepEquals(expectedResult, actualResult); comparing dimentional array and objects
 
+    @Test
+    void checkMultiplicationOfArray_Streem() {
+        int[] inputValue = {2, 3, 4, 5, 6};
+        int[] expectedResult = {6, 8, 15, 24, 30};
+        int[] actualresult = MultiplyOfArrayElement_Stream.updateArray(inputValue);
+        // Assertions.assertEquals(Arrays.toString(expectedResult),Arrays.toString(actualresult));
+        Assertions.assertArrayEquals(expectedResult,actualresult);
+        Assertions.assertTrue(Arrays.equals(expectedResult,actualresult));
+    }
     }
 
 
