@@ -15,7 +15,7 @@ public class DubOccuranceStream {
                 .collect(Collectors.groupingBy(Character::valueOf, Collectors.counting()))
                 .entrySet()
                 .stream()
-                .filter(entry -> entry.getValue() > 1)
+                .filter(entry -> entry.getValue() > 1 )
                 .count();
     }
 }

@@ -12,6 +12,10 @@ Example:
 "ABBA" -> 2 # 'A' and 'B' each occur twice.
  */
 public class OtherSolutions {
+
+    public static void main(String[] args) {
+        dupChars("Elma");
+    }
     public static int dupChars(String str){
         if(str== null || str.length() ==0){
             return 0;

@@ -1,5 +1,6 @@
 package com.edu.week4;
 
+import com.edu.week6.ArrayReduction;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -28,17 +29,11 @@ class MultiplyOfArrayElements2Test {
         Assertions.assertArrayEquals(expectedResult,actualresult);
         Assertions.assertTrue(Arrays.equals(expectedResult,actualresult));
     }
-
-
         @Test
-        public void testUpdateArrayWithNullArray() {
-            int[] numArray = null;
-            try {
-                int[] result = updateArray(numArray);
-                Assertions.fail("Expected IllegalArgumentException, but no exception was thrown");
-            } catch (IllegalArgumentException e) {
-                Assertions.assertEquals("Array can not be null value", e.getMessage());
-            }
+        void checkException(){
+                assertThrows(IllegalArgumentException.class, ()-> {
+                    MultiplyOfArrayElements.updateArray(null);
+                }, "This array can not be null");
         }
 
         // Arrays.deepEquals(expectedResult, actualResult); comparing dimentional array and objects

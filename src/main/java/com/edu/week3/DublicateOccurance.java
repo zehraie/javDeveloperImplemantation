@@ -34,4 +34,6 @@ public class DublicateOccurance {
         return duplicateCount;
 
     }
+// dublica olmus satiyi veriyor.
+
 }
