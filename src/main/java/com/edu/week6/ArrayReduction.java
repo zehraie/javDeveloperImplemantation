@@ -7,15 +7,15 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class ArrayReduction {
+
     public static void main(String[] args) {
-        int [] tt = {4,6,8};
-        System.out.println(arrayReductionCost(tt));
+        int [] input = {4,6,8};
+        System.out.println(arrayReductionCost(input));
     }
     public static int arrayReductionCost(int [] num) {
         if (num == null) {
             throw new IllegalArgumentException("Array can not be null value");
         }
-        // List<Integer> list = new ArrayList<>(Arrays.asList(num));
         List<Integer> list = new ArrayList<>();
         for (int i : num){
             list.add(i);
