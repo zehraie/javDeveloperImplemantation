@@ -16,6 +16,7 @@ public class ArrayReduction {
         if (num == null) {
             throw new IllegalArgumentException("Array can not be null value");
         }
+        Arrays.sort(num);
         List<Integer> list = new ArrayList<>();
         for (int i : num){
             list.add(i);

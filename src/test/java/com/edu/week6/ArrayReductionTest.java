@@ -21,6 +21,13 @@ import static org.junit.jupiter.api.Assertions.*;
          int actualResult = ArrayReduction.arrayReductionCost(tt);
          Assertions.assertNotEquals(8,actualResult);
      }
+
+     @Test
+     void emptyArray(){
+         int [] tt = {};
+         int actualResult = ArrayReduction.arrayReductionCost(tt);
+         Assertions.assertEquals(0,actualResult);
+     }
      @Test
      void checkException(){
          assertThrows(IllegalArgumentException.class, ()-> {
