@@ -21,6 +21,18 @@ import static org.junit.jupiter.api.Assertions.*;
          int actualResult = ArrayReduction.arrayReductionCost(tt);
          Assertions.assertNotEquals(8,actualResult);
      }
+     @Test
+     void unhappyPath2(){
+         int [] tt = {8};
+         int actualResult = ArrayReduction.arrayReductionCost(tt);
+         Assertions.assertEquals(0,actualResult);
+     }
+     @Test
+     void unhappyPath3(){
+         int [] tt = {8,10};
+         int actualResult = ArrayReduction.arrayReductionCost(tt);
+         Assertions.assertEquals(18,actualResult);
+     }
 
      @Test
      void emptyArray(){

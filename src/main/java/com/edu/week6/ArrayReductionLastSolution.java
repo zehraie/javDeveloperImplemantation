@@ -4,7 +4,7 @@ import java.util.PriorityQueue;
 
 public class ArrayReductionLastSolution {
     public static void main(String[] args) {
-        int [] input = {64,6,8};
+        int [] input = {4,6,8};
         System.out.println(reduceSum(input));
     }
     public static int reduceSum(int[] arr) {
@@ -15,7 +15,6 @@ public class ArrayReductionLastSolution {
         for (int num : arr) {
             pq.offer(num);
         }
-
         int sum = 0;
         while (pq.size() > 1) {
             int first = pq.poll();
@@ -35,3 +34,7 @@ public class ArrayReductionLastSolution {
 //        while (!pq.isEmpty()) {
 //            System.out.print(pq.poll() + " ");
 //        }
+
+//  while (!pq.isEmpty()) {
+//          System.out.print(pq.remove() + " ");
+//          }
