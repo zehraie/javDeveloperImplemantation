@@ -47,7 +47,6 @@ public class AlmostEquivalent {
                 tCounts.put(c, tCounts.getOrDefault(c, 0) + 1);
             }
         }
-
         // Check if the difference in occurrences for each letter is no more than 3
     for(var entry : sCounts.entrySet()){
         char c = entry.getKey();
