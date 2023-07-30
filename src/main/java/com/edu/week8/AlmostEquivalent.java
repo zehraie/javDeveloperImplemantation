@@ -61,8 +61,6 @@ public class AlmostEquivalent {
         int sCount = sCounts.getOrDefault(c,0);
         if (Math.abs(tCount - sCount) > 3) return false;
     }
-
     return true;
     }
-
 }
