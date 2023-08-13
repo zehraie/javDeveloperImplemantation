@@ -15,6 +15,9 @@ public class AlmostEquivalent {
     }
 
     public static List<String> allalmostEquivalent(String[] sArray, String[] tArray) {
+        if (sArray== null || tArray==null) {
+            throw new IllegalArgumentException("Array can not be null value");
+        }
         List<String> result = new ArrayList<>();
 
         for (int i = 0; i < sArray.length; i++) {
@@ -28,9 +31,7 @@ public class AlmostEquivalent {
             }
         }
         return result;
-
     }
-
     private static boolean isAlmostEquivalent(String sStr, String tStr) {
         Map<Character, Integer> sCounts = new HashMap<>();
         Map<Character, Integer> tCounts = new HashMap<>();
