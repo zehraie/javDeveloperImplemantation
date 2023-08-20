@@ -37,6 +37,8 @@ public class MostFrequentIp {
                 mostFrequentIPs.add(entry.getKey().strip());
             }
         }
+
+
         Collections.sort(mostFrequentIPs);
        System.out.println("List: "+mostFrequentIPs);
         return String.join(",",mostFrequentIPs);
