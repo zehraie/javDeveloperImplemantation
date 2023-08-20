@@ -1,5 +1,8 @@
 package com.edu.week10;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class DynamicArray<T> {
     private Object [] data;  //used to store the element of dynamic array. any object type
     private int size;
@@ -16,6 +19,7 @@ public class DynamicArray<T> {
             resizeArray();
         }
         data[size] = element;
+        System.out.println(Arrays.toString(data));
         size++;
     }
 
@@ -26,17 +30,29 @@ public class DynamicArray<T> {
     private void resizeArray() {
         capacity *=2;
         Object[] newData = new Object[capacity];
-        System.arraycopy(data, 0, newData, 0, size);
-        data = newData;
+        //System.arraycopy(data, 0, newData, 0, size);
+        data = Arrays.copyOf(data, capacity);
+       // data = newData;
+
     }
 
     public static void main(String[] args) {
        // ArrayList<Integer> a = new ArrayList<>();
         DynamicArray<Integer> dynamicArray = new DynamicArray<>();
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < 4; i++) {
             dynamicArray.add(i);
-            System.out.println("Size: " + dynamicArray.size());
         }
+        System.out.println("Size: " + dynamicArray.size());
+        DynamicArray<Integer> intArray = new DynamicArray<>();
+        intArray.add(10);
+        intArray.add(20);
+        System.out.println("IntArray_Size: " + intArray.size());
+
+        DynamicArray<String> stringArray = new DynamicArray<>();
+        stringArray.add("Hello");
+        stringArray.add("World");
+        stringArray.add("Kids");
+        System.out.println("StringArray_Size: " + stringArray.size());
 
     }
 
