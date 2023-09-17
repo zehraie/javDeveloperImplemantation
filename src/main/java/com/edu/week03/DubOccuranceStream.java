@@ -1,4 +1,4 @@
-package com.edu.week3;
+package com.edu.week03;
 
 import java.util.stream.Collectors;
 

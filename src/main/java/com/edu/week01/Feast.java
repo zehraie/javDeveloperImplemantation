@@ -1,4 +1,4 @@
-package com.edu.week1;
+package com.edu.week01;
 
 public class Feast {
     public static void main(String[] args) {

@@ -1,7 +1,5 @@
-package com.edu.week3;
+package com.edu.week03;
 
-import com.edu.week3.DubOccuranceStream;
-import com.edu.week3.DublicateOccurance;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

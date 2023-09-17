@@ -1,4 +1,4 @@
-package com.edu.week4;
+package com.edu.week04;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;

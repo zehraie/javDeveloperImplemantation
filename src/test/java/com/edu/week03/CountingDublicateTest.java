@@ -1,6 +1,5 @@
-package com.edu.week3;
+package com.edu.week03;
 
-import com.edu.week3.OtherSolutions;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

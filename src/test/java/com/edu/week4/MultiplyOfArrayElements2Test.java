@@ -1,13 +1,13 @@
 package com.edu.week4;
 
-import com.edu.week6.ArrayReduction;
+import com.edu.week04.MultiplyOfArrayElement_Stream;
+import com.edu.week04.MultiplyOfArrayElements;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 
 import java.util.Arrays;
 
-import static com.edu.week4.MultiplyOfArrayElement_Stream.updateArray;
 import static org.junit.jupiter.api.Assertions.*;
 
 class MultiplyOfArrayElements2Test {
